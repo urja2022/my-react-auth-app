@@ -1,0 +1,79 @@
+.MuiInputBase-root.MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #6200ee !important;
+}
+
+.MuiFormLabel-root.MuiInputLabel-root.Mui-focused {
+  color: #6200ee !important;
+}
+
+.otp_input_stack .MuiInputBase-root.MuiOutlinedInput-root.Mui-focused {
+  background-color: #f2e9ff !important;
+}
+
+.otp_input_stack .MuiInputBase-input.MuiOutlinedInput-input {
+  text-align: center !important;
+  font-size: 24px !important;
+  color: #6200ee !important;
+}
+
+.react-tel-input .form-control {
+  max-height: 56px !important;
+}
+
+.react-tel-input .form-control:focus {
+  border-color: #6200ee !important;
+  box-shadow: 0 0 0 1px #6200ee !important;
+}
+
+.form_mui_checkbox .MuiFormControlLabel-root {
+  margin-right: 0 !important;
+}
+
+.MuiButtonBase-root.MuiCheckbox-root {
+  color: #97a8be !important;
+}
+
+.MuiButtonBase-root.MuiCheckbox-root.Mui-checked {
+  color: #6200ee !important;
+}
+
+.MuiButtonBase-root.MuiRadio-root.Mui-checked {
+  color: #6200ee !important;
+}
+
+.MuiButtonBase-root.MuiRadio-root {
+  color: #97a8be !important;
+}
+
+.MuiPaper-root.MuiDialog-paper {
+  border-radius: 10px !important;
+}
+
+.MuiButtonBase-root.MuiSwitch-switchBase.Mui-checked {
+  color: #6200ee !important;
+}
+
+.MuiButtonBase-root.MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track {
+  background-color: #c8a2ff;
+}
+
+.MuiPaper-root.MuiPopover-paper {
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.1), 0px 1px 16px rgba(0, 0, 0, 0.18) !important;
+  border-radius: 8px !important;
+}
+
+.navbar_config_container .MuiButtonBase-root.MuiButton-root:hover {
+  background-color: transparent !important;
+}
+
+.MuiTableCell-root {
+  font-family: "Google Sans", Roboto, Arial, sans-serif !important;
+}
+.list_item_icon_modify {
+  min-width: unset !important;
+}
+
+.db_trust_level_modal_box .MuiInputBase-input {
+  padding: 16.5px 14px !important;
+}

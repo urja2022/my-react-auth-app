@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./theme/styles/App.css";
+import "@fontsource/inter";
+import { SnackbarProvider } from "notistack";
+// routes
+import Router from "./routes";
+// hooks
+import useStore from "./contexts/AuthProvider";
+// components
+import LoadingScreen from "./components/LoadingScreen";
+import SocketContextProvider from "./contexts/socketProvider";
 
-function App() {
+// ----------------------------------------------------------------------
+
+export default function App() {
+  const { isInitialized } = useStore();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <SnackbarProvider maxSnack={3}>
+        <SocketContextProvider>
+          {isInitialized ? <Router /> : <LoadingScreen />}
+        </SocketContextProvider>
+      </SnackbarProvider>
+    </>
   );
 }
-
-export default App;

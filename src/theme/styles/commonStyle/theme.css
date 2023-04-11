@@ -1,0 +1,45 @@
+
+
+html,
+body {
+  height: 100%;
+}
+.app_bg_primary {
+  background-color: #6200ee !important ;
+}
+.app_bg_primary_light {
+  background-color: #efe5fd !important ;
+}
+.app_bg_primary_medium {
+  background-color: #e0ccfc !important ;
+}
+.app_border_primary {
+  border: 1px solid #6200ee !important;
+}
+.app_layout_theme {
+  background-color: #6e3fc6 !important;
+}
+.app_bg_red_light {
+  background-color: #ffe4e4 !important ;
+}
+.app_border_red {
+  border: 1px solid #fd4a4c !important;
+}
+.app_border_8 {
+  border-radius: 8px;
+}
+.app_border_25 {
+  border-radius: 25px !important;
+}
+.app_card_shadow {
+  box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.06), 0px 1px 2px rgba(0, 0, 0, 0.06),
+    0px 1px 3px rgba(0, 0, 0, 0.1) !important;
+}
+
+.custom_scrollbar{
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.max_hight500{
+  max-height: 500px;
+}

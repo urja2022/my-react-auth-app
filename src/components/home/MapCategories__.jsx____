@@ -1,0 +1,18 @@
+import React from 'react'
+import { Box } from '@mui/material'
+
+import MapCategoryOptions from './MapCategoryOptions'
+
+
+const MapCategories = (mapCatData) => {
+
+    return (
+        <>
+            <Box className="map_category_wrapper">
+                <MapCategoryOptions {...mapCatData} />
+            </Box>
+        </>
+    )
+}
+
+export default MapCategories

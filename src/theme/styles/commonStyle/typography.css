@@ -1,0 +1,215 @@
+body {
+  font-family: "Google Sans", Roboto, Arial, sans-serif !important;
+}
+h4 {
+  margin-bottom: 0 !important;
+}
+.app_text_black {
+  color: #2d3748 !important;
+}
+.app_text_black_2 {
+  color: #454f5a !important;
+}
+.app_text_black_3 {
+  color: #818792 !important;
+}
+.app_text_gray {
+  color: #97a8be !important;
+}
+.app_text_orange {
+  color: orange !important;
+}
+.app_text_primary {
+  color: #6200ee !important;
+}
+.app_text_green {
+  color: #00832d;
+}
+.app_text_red {
+  color: #fd4a4c !important;
+}
+.app_text_dark_red {
+  color: #cc222e !important;
+}
+.app_text_primary_2 {
+  color: #6700f0 !important;
+}
+
+.app_text_transform {
+  text-transform: lowercase !important;
+}
+.app_text_10 {
+  font-family: "Google Sans", Roboto, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px !important;
+}
+.app_text_10_500 {
+  font-family: "Google Sans", Roboto, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+}
+.app_text_12 {
+  font-family: "Google Sans", Roboto, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+}
+.app_text_12_fw500 {
+  font-family: "Google Sans", Roboto, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+}
+.app_text_12_semibold {
+  font-family: "Google Sans", Roboto, Arial, sans-serif !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+}
+.app_text_14 {
+  font-family: "Google Sans", Roboto, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+}
+.app_text_14_semibold {
+  font-family: "Google Sans", Roboto, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+.app_text_14_500 {
+  font-family: "Google Sans", Roboto, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+}
+.app_text_16 {
+  font-family: "Google Sans", Roboto, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+}
+.app_text_16_500 {
+  font-family: "Google Sans", Roboto, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+}
+.app_text_16_semibold {
+  font-family: "Google Sans", Roboto, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+}
+.app_text_18_500 {
+  font-family: "Google Sans", Roboto, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+}
+.app_text_18_semibold {
+  font-family: "Google Sans", Roboto, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+}
+.app_text_20_500 {
+  font-family: "Google Sans", Roboto, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+}
+.app_text_20_semibold {
+  font-family: "Google Sans", Roboto, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+}
+.app_text_20_bold {
+  font-family: "Google Sans", Roboto, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+}
+.app_text_24_500 {
+  font-family: "Google Sans", Roboto, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 24px !important;
+}
+.app_text_24_600 {
+  font-family: "Google Sans", Roboto, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 24px !important;
+}
+.app_text_30_bold {
+  font-family: "Google Sans", Roboto, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  font-size: 30px !important;
+}
+.reverse_text {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  color: #bb86fc !important;
+}
+.text_limit_120 {
+  display: inline-block !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  width: 120px !important;
+  text-overflow: ellipsis !important;
+}
+.text_limit_150 {
+  display: inline-block !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  width: 150px !important;
+  text-overflow: ellipsis !important;
+}
+.text_limit_180 {
+  display: inline-block !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  width: 180px !important;
+  text-overflow: ellipsis !important;
+}
+.text_limit_200 {
+  /* display: inline-block !important; */
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  width: 200px !important;
+  text-overflow: ellipsis !important;
+}
+.text_limit_250 {
+  /* display: inline-block !important; */
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  width: 250px !important;
+  text-overflow: ellipsis !important;
+}
+.text_limit_60 {
+  display: inline-block !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  max-width: 40px !important;
+  text-overflow: ellipsis !important;
+}
+.lh_20 {
+  line-height: 20px !important;
+}
+.SnackbarItem-message {
+  text-transform: lowercase !important;
+}
+
+.app_para_lineClamp_3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

@@ -1,0 +1,12 @@
+import React from 'react'
+import { useLocation } from 'react-router'
+const MainContent = ({ children }) => {
+    let location = useLocation(null);
+    return (
+        <div className={`main_content_wrapper ${location.pathname === '/map' ? 'p-0' : ''}`}>
+            {children}
+        </div>
+    )
+}
+
+export default MainContent

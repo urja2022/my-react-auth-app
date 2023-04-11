@@ -1,0 +1,103 @@
+.app_blank_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  text-transform: lowercase !important;
+}
+
+.app_btn_lg {
+  width: 100%;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+  line-height: 1.5 !important;
+  display: flex;
+  align-items: center;
+  max-height: 48px !important;
+  text-transform: lowercase !important;
+}
+.app_null_btn {
+  background: transparent !important;
+  min-width: unset !important;
+  padding: 0 !important;
+}
+.app_shodow_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-transform: lowercase !important;
+}
+
+.linkList_btn {
+  padding: 8px 14px !important;
+  border-radius: 6px !important;
+  width: 80px !important;
+  color: #fff;
+  text-transform: lowercase !important;
+}
+
+.MuiButton-contained.theme_button {
+  padding: 6px 16px;
+  min-width: 64px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #6200ee !important;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  text-transform: lowercase !important;
+}
+.MuiButton-contained.theme_button_light {
+  padding: 6px 16px;
+  min-width: 64px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #e0ccfc !important ;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  text-transform: lowercase !important;
+}
+
+.MuiButton-contained.theme_button_view {
+  padding: 6px 16px;
+  min-width: 64px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  border-radius: 4px;
+  color: #6200ee;
+  background-color: #efe5fd !important;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  text-transform: lowercase !important;
+}
+
+.MuiButton-contained.invalid_button {
+  padding: 6px 16px;
+  min-width: 64px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  border-radius: 4px;
+  color: #fd4a4c !important;
+  background-color: #ffe4e4 !important;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  text-transform: lowercase !important;
+}
+
+.app_btn {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+  line-height: 1.5 !important;
+  display: flex;
+  align-items: center;
+  max-height: 48px !important;
+  width: fit-content !important;
+  text-transform: lowercase !important;
+}
