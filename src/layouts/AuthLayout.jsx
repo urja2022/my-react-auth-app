@@ -12,10 +12,10 @@ const AuthLayout = ({ children }) => {
                             <div className='welcome_icon'>
                                 <WelcomeIcon />
                             </div>
-                            <div className='welcome_text'>
+                            {/* <div className='welcome_text'>
                                 <h4 className='text-white app_text_30_bold text-nowrap d-flex mb-3'><BeemzText /></h4>
-                            </div>
-                            <p className='text-white text-nowrap text-lowercase'>connect with trust</p>
+                            </div> */}
+                            {/* <p className='text-white text-nowrap text-lowercase'>connect with trust</p> */}
                         </div>
                     </div>
                 </div>
