@@ -79,12 +79,7 @@ const sidebarData = [
         linkIconElem: <Setting />,
         permission: "",
     },
-    {
-        linkText: 'contact us',
-        link: PATH_DASHBOARD.general.contactUs,
-        linkIconElem: <ContactPageIcon />,
-        permission: "",
-    }
+   
 ]
 
 const MainSidebar = () => {

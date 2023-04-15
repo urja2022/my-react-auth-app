@@ -48,11 +48,11 @@ const BUSINESS_API_URL = {
   businessIdVerify: path(BUSINESS_PATH, "/verify/document"),
   businessPermission: path(BUSINESS_PATH, "/setting"),
   businessReference: path(BUSINESS_PATH, "/references"),
-  businessUpdate: path(BUSINESS_PATH, "/"),
-  addBusinessAddress: path(BUSINESS_PATH, "/addresses"),
-  getBusinessAddress: path(BUSINESS_PATH, "/address/"),
-  updateBusinessAddress: path(BUSINESS_PATH, "/address"),
-  deteleBusinessAddress: path(BUSINESS_PATH, "/address/"),
+
+  // addBusinessAddress: path(BUSINESS_PATH, "/addresses"),
+  // getBusinessAddress: path(BUSINESS_PATH, "/address/"),
+  // updateBusinessAddress: path(BUSINESS_PATH, "/address"),
+  // deteleBusinessAddress: path(BUSINESS_PATH, "/address/"),
   businessBulkAddress: path(BUSINESS_PATH, "/mul/address")
 };
 
@@ -83,10 +83,10 @@ const USER_API_URL = {
   chatCategoryList: path(ROOTS_PATH, "/chat/category"),
   selectCategoryList: path(ROOTS_PATH, "/category/list"),
   selectChatCategoryList: path(ROOTS_PATH, "/chat/category/list"),
-  trustLevelList: path(ROOTS_PATH, "/trust/list"),
-  trustLevelAdd: path(ROOTS_PATH, "/trust"),
-  trustLevelUpdate: path(ROOTS_PATH, "/trust/"),
-  userTrustLevelUpdate: path(ROOTS_PATH, "/user/trust/"),
+  // trustLevelList: path(ROOTS_PATH, "/trust/list"),
+  // trustLevelAdd: path(ROOTS_PATH, "/trust"),
+  // trustLevelUpdate: path(ROOTS_PATH, "/trust/"),
+  // userTrustLevelUpdate: path(ROOTS_PATH, "/user/trust/"),
   deleteCategory: path(ROOTS_PATH, "/category/"),
   deleteSubCategory: path(ROOTS_PATH, "/subcategory/"),
   deleteChatCategory: path(ROOTS_PATH, "/chat/category/"),
@@ -118,9 +118,9 @@ const USER_API_URL = {
   removeArchiveUser: path(ROOTS_PATH, "/restore"),
   getDeletedReqList: path(ROOTS_PATH, "/deleted-req"),
 
-  deleteBusinessView: path(ROOTS_PATH, "/delete-request/business/view/"),
 
-  getRestoreUser: path(ROOTS_PATH, "/restoreUserView"),
+
+
   cancelRequest: path(ROOTS_PATH, "/request/cancel/"),
   getDirection: path(USER_LOCATION, "/google/direction"),
   getUserIdVerification: path(USER_PATH, "/idVerifyList"),
@@ -203,9 +203,7 @@ const POST_API_URL = {
   postGetLikes: path(SOCIAL_MEDIA_PATH, '/post/like/:postId'),
 
 }
-const CONTACT_US_API_URL = {
-  contactUsList: path(ROOTS_PATH, '/contact-us'),
-}
+
 export {
   axiosPrivate,
   AUTH_API_URL,
@@ -221,5 +219,5 @@ export {
   EVENT_API_URL,
   CHAT_API_URL,
   POST_API_URL,
-  CONTACT_US_API_URL
+  
 }

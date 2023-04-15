@@ -29,31 +29,30 @@ export const PATH_DASHBOARD = {
     userEdit: path(ROOTS_DASHBOARD, "/user-edit"),
     userView: path(ROOTS_DASHBOARD, "/user-view"),
     userLocation: path(ROOTS_DASHBOARD, "/user-location"),
-    businessAddress: path(ROOTS_DASHBOARD, "/business-address"),
-    businessEdit: path(ROOTS_DASHBOARD, "/business-edit"),
-    businessUpdate: path(ROOTS_DASHBOARD, "/business-update"),
+   
+    
+
  
-    businessAddressAdd: path(ROOTS_DASHBOARD, "/business-address-add"),
   
 
     admin: path(ROOTS_DASHBOARD, "/admin"),
     event: path(ROOTS_DASHBOARD, "/event"),
     eventDetails: path(ROOTS_DASHBOARD, "/event/details"),
     userEvent: path(ROOTS_DASHBOARD, "/users/event"),
-    business: path(ROOTS_DASHBOARD, "/business"),
-    businessView: path(ROOTS_DASHBOARD, "/business-View"),
+
+   
     profileSetting: path(ROOTS_DASHBOARD, "/profile-settings"),
     idVerify: path(ROOTS_DASHBOARD, "/id-verify"),
     permission: path(ROOTS_DASHBOARD, "/permission"),
     reference: path(ROOTS_DASHBOARD, "/reference"),
-    createBusiness: path(ROOTS_DASHBOARD, "/create-business"),
+  
     general: path(ROOTS_DASHBOARD, "/general"),
     ads: path(ROOTS_DASHBOARD, "/ads"),
 
     employee: path(ROOTS_DASHBOARD, "/employee"),
     businessIdVerify: path(ROOTS_DASHBOARD, "/business-id-verify"),
     businessPermission: path(ROOTS_DASHBOARD, "/business-permission"),
-    businessReferences: path(ROOTS_DASHBOARD, "/business-references"),
+
 
 
     rolesPermissions: path(ROOTS_DASHBOARD, "/role-permission"),
@@ -71,15 +70,15 @@ export const PATH_DASHBOARD = {
 
     deleteBusinessReqView: path(ROOTS_DASHBOARD, "/delete-req-business"),
    
-    restoreUserView: path(ROOTS_DASHBOARD, "/restore-user-view"),
+
    
     feedDetail: path(ROOTS_DASHBOARD, "/feed-detail"),
 
-    businessEvent: path(ROOTS_DASHBOARD, "/business/event"),
+ 
     userEventEdit: path(ROOTS_DASHBOARD, "/event/edit"),
     eventInvitedUserList: path(ROOTS_DASHBOARD, "/invited/users"),
-    contactUs : path(ROOTS_DASHBOARD, "/contact-us"),
-    contactUsView : path(ROOTS_DASHBOARD, "/contact-us/view")
+   
+   
 
   },
 };

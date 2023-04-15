@@ -7,7 +7,7 @@ import { USER_API_URL } from 'src/api/axios';
 import useAxiosPrivate from 'src/hooks/useAxiosPrivate';
 import NearMeIcon from "@mui/icons-material/NearMe";
 import LoadingScreen from 'src/components/LoadingScreen';
-import LocationLogPinPopup from './LocationLogPinPopup';
+
 import _ from "lodash";
 import getDataURL from 'src/components/map/imgToMarker';
 import files from 'src/helpers/helpers';
@@ -192,13 +192,7 @@ const UserLocation = () => {
                 </>
 
             }
-            <LocationLogPinPopup
-                googleMarker={googleMarker}
-                centerPoint={centerPoint}
-                locationData={locationData}
-                open={locationLogPopup}
-                onClose={locationLogPopupClose}
-            />
+           
         </>
 
     )
