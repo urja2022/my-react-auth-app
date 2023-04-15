@@ -15,7 +15,7 @@ import { PATH_DASHBOARD } from 'src/routes/paths'
 import { Backdrop, Box, Fab, IconButton, InputBase, List, Paper } from '@mui/material'
 import SearchIcon from 'src/svgComponents/SearchIcon'
 import useStore from 'src/contexts/AuthProvider'
-import MapFeedItem from '../home/MapFeedItem'
+// import MapFeedItem from '../home/MapFeedItem'
 import WidgetsIcon from "@mui/icons-material/Widgets";
 import SidebarListitem from './SidebarListitem'
 import NotificationsIcon from '@mui/icons-material/Notifications';
@@ -30,18 +30,8 @@ const sidebarData = [
         linkIconElem: <Dashboard />,
         permission: "",
     },
-    {
-        linkText: 'users',
-        link: PATH_DASHBOARD.general.users,
-        linkIconElem: <UserCircle />,
-        permission: "users",
-    },
-    {
-        linkText: 'chat group',
-        link: PATH_DASHBOARD.general.chatGroup,
-        linkIconElem: <SubAdmin />,
-        permission: "users",
-    },
+   
+   
     {
         linkText: 'roles/permissions',
         link: PATH_DASHBOARD.general.rolesPermissions,
@@ -54,24 +44,9 @@ const sidebarData = [
         linkIconElem: <SubAdmin />,
         permission: "sub_admin",
     },
-    {
-        linkText: 'business',
-        link: PATH_DASHBOARD.general.business,
-        linkIconElem: <Business />,
-        permission: "business_request",
-    },
-    {
-        linkText: 'events',
-        link: PATH_DASHBOARD.general.event,
-        linkIconElem: <Event />,
-        permission: "event",
-    },
-    {
-        linkText: 'delete user/business',
-        link: PATH_DASHBOARD.general.userDeleteReq,
-        linkIconElem: <UserCircle />,
-        permission: "users",
-    },
+    
+   
+   
     
     {
         linkText: 'settings',

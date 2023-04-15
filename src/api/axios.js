@@ -49,10 +49,7 @@ const BUSINESS_API_URL = {
   businessPermission: path(BUSINESS_PATH, "/setting"),
   businessReference: path(BUSINESS_PATH, "/references"),
 
-  // addBusinessAddress: path(BUSINESS_PATH, "/addresses"),
-  // getBusinessAddress: path(BUSINESS_PATH, "/address/"),
-  // updateBusinessAddress: path(BUSINESS_PATH, "/address"),
-  // deteleBusinessAddress: path(BUSINESS_PATH, "/address/"),
+
   businessBulkAddress: path(BUSINESS_PATH, "/mul/address")
 };
 
@@ -65,8 +62,8 @@ const USER_API_URL = {
   getidVerifyCountList: path(ROOTS_PATH, "/idVerifyCountList"),
   idVerifyCountUpdate: path(ROOTS_PATH, "/idVerifyCountUpdate"),
   userDocList: path(USER_PATH, "/pending/document"),
-  userEdit: path(USER_PATH, "/edit"),
-  userLocation: path(ROOTS_PATH, "/user/location/"),
+
+
   userUpdate: path(USER_PATH, "/profile"),
   userRejected: path(USER_PATH, "/rejected/"),
   //user buisness status update
@@ -99,7 +96,7 @@ const USER_API_URL = {
   linkedRequest: path(ROOTS_PATH, "/link/"),
   employeeList: path(ROOTS_PATH, "/employee/"),
   eventList: path(ROOTS_PATH, "/events"),
-  userEventList: path(ROOTS_PATH, '/events/user'),
+
   eventInactive: path(ROOTS_PATH, '/event/disable/'),
   eventBlockUser: path(ROOTS_PATH, '/event/user/block/'),
   updateUserRequest: path(USER_PATH, "/document/approve"),
@@ -112,7 +109,7 @@ const USER_API_URL = {
 
 
 
-  getUserDeleteReqList: path(ROOTS_PATH, "/delete/request"),
+
   deleteUser: path(ROOTS_PATH, "/user/"),
   deleteBusiness: path(ROOTS_PATH, "/business/"),
   removeArchiveUser: path(ROOTS_PATH, "/restore"),
@@ -123,8 +120,7 @@ const USER_API_URL = {
 
   cancelRequest: path(ROOTS_PATH, "/request/cancel/"),
   getDirection: path(USER_LOCATION, "/google/direction"),
-  getUserIdVerification: path(USER_PATH, "/idVerifyList"),
-  updateUserIdVerification: path(ROOTS_PATH, "/id/verify"),
+
   updateIdVerificationList: path(USER_PATH, "/idVerifyUpdateList"),
   updateIsMark: path(USER_PATH, "/isMark"),
   getChatGroup: path(ROOTS_PATH, "/group/chat/list"),
@@ -178,10 +174,10 @@ const CONFIG_FIELD = {
 const EVENT_API_URL = {
   // multipleImageUpload: path(USER_LOCATION, "/multiple/image/upload"),
   // createEvent: path(USER_LOCATION, "/event"),
-  getAllEvent: path(USER_LOCATION, "/allEvent"),
-  getEventStatusFilter: path(USER_LOCATION, "/event/status/list"),
-  getSignleEventDetails: path(USER_LOCATION, "/event/"),
-  videoImageUpload: path(SOCIAL_MEDIA_PATH, '/multiple/video/upload'),
+  // getAllEvent: path(USER_LOCATION, "/allEvent"),
+  // getEventStatusFilter: path(USER_LOCATION, "/event/status/list"),
+ 
+  // videoImageUpload: path(SOCIAL_MEDIA_PATH, '/multiple/video/upload'),
   // cancelEvent: path(USER_LOCATION, "/event/cancel/"),
   // eventInvitation: path(USER_LOCATION, "/event/invitation"),
 }

@@ -22,13 +22,12 @@ export const PATH_DASHBOARD = {
   general: {
     dashboard: path(ROOTS_DASHBOARD, "/"),
     users: path(ROOTS_DASHBOARD, "/users"),
-    // userIdVerification: path(ROOTS_DASHBOARD, "/user-id-verification"),
-    // updateIdVerification: path(ROOTS_DASHBOARD, "/update-id-verification"),
+   
 
     chatGroup: path(ROOTS_DASHBOARD, "/chat-group"),
-    userEdit: path(ROOTS_DASHBOARD, "/user-edit"),
-    userView: path(ROOTS_DASHBOARD, "/user-view"),
-    userLocation: path(ROOTS_DASHBOARD, "/user-location"),
+
+
+
    
     
 
@@ -36,9 +35,9 @@ export const PATH_DASHBOARD = {
   
 
     admin: path(ROOTS_DASHBOARD, "/admin"),
-    event: path(ROOTS_DASHBOARD, "/event"),
-    eventDetails: path(ROOTS_DASHBOARD, "/event/details"),
-    userEvent: path(ROOTS_DASHBOARD, "/users/event"),
+    
+  
+    
 
    
     profileSetting: path(ROOTS_DASHBOARD, "/profile-settings"),
@@ -65,7 +64,7 @@ export const PATH_DASHBOARD = {
  
 
 
-    userDeleteReq: path(ROOTS_DASHBOARD, "/delete-request"),
+  
     restoreDeletedReq: path(ROOTS_DASHBOARD, "/restore-deleted-user"),
 
     deleteBusinessReqView: path(ROOTS_DASHBOARD, "/delete-req-business"),
@@ -75,8 +74,8 @@ export const PATH_DASHBOARD = {
     feedDetail: path(ROOTS_DASHBOARD, "/feed-detail"),
 
  
-    userEventEdit: path(ROOTS_DASHBOARD, "/event/edit"),
-    eventInvitedUserList: path(ROOTS_DASHBOARD, "/invited/users"),
+   
+  
    
    
 

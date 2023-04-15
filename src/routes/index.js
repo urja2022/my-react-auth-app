@@ -15,10 +15,9 @@ import LoadingScreen from "../components/LoadingScreen";
 import Settings from "src/pages/dashboard/Settings";
 import Dashboard from "src/pages/dashboard/Dashboard";
 import useStore from "src/contexts/AuthProvider";
-import EventDetails from "src/pages/dashboard/Event/EventDetails";
 
-import UserEventEdit from "src/pages/dashboard/UserEventEdit";
-import EventInvitedUser from "src/pages/dashboard/Event/EventInvitedUsers";
+
+
 
 
 
@@ -71,22 +70,13 @@ export default function Router() {
       ),
       children: [
         { path: "/", element: <Dashboard /> },
-        {
-          path: "/delete-request",
-          element: permissionsData?.users?.substring(0, 1) == "1" ? <UserDeleteReq /> : <Dashboard />,
-        },
+       
         
        
       
        
-        {
-          path: "/users",
-          element: permissionsData?.users?.substring(0, 1) == "1" ? <UsersList /> : <Dashboard />,
-        },
-        {
-          path: "/user-location",
-          element: permissionsData?.users?.substring(0, 1) == "1" ? <UserLocation /> : <Dashboard />,
-        },
+       
+       
        
         
       
@@ -105,8 +95,8 @@ export default function Router() {
        
        
        
-        { path: "user-edit", element: <UserEdit /> },
-        { path: "user-view", element: <UserView /> },
+       
+        
       
         {
           path: "role-permission",
@@ -120,9 +110,9 @@ export default function Router() {
        
         
  
-        { path: "event", element: <Event /> },
-        { path: "event/details", element: <EventDetails /> },
-        { path: "users/event", element: <UserEvent /> },
+        
+      
+        
       
        
       
@@ -131,8 +121,8 @@ export default function Router() {
     
         { path: "/users/notification", element: <Notification /> },
        
-        { path: "event/edit", element: <UserEventEdit /> },
-        { path: "invited/users", element: <EventInvitedUser /> },
+      
+        
       
         
       ],
@@ -169,8 +159,8 @@ const Login = Loadable(lazy(() => import("../pages/authentication/Login")));
 // Dashboard
 
 const ProfileSettings = Loadable(lazy(() => import("../pages/dashboard/ProfileSettings")));
-const UsersList = Loadable(lazy(() => import("../pages/dashboard/UsersList")));
-const UserView = Loadable(lazy(() => import("../pages/dashboard/UserView")));
+
+
 
 const SubAdmin = Loadable(lazy(() => import("../pages/dashboard/SubAdmin")));
 
@@ -187,20 +177,19 @@ const RolesPermissions = Loadable(lazy(() => import("../pages/dashboard/RolesPer
 
 
 
-const Event = Loadable(lazy(() => import("../pages/dashboard/Event/Event")));
-const UserEvent = Loadable(lazy(() => import("../pages/dashboard/UserEvent")));
-const UserEdit = Loadable(lazy(() => import("../pages/dashboard/UserEdit")));
-
-
-
-
-const UserDeleteReq = Loadable(lazy(() => import("../pages/dashboard/UserDeleteReq")));
 
 
 
 
 
-const UserLocation = Loadable(lazy(() => import("../pages/dashboard/UserLocation")));
+
+
+
+
+
+
+
+
 
 //Post 
 

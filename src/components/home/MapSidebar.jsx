@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import { Backdrop, Box, Button, List } from "@mui/material";
-import MapSearchbar from "./MapSearchbar";
+// import MapSearchbar from "./MapSearchbar";
 import { useEffect } from "react";
-import MapFeedItem from "./MapFeedItem";
+// import MapFeedItem from "./MapFeedItem";
 import ArrowLeftRoundedIcon from "@mui/icons-material/ArrowLeftRounded";
 import ArrowRightRoundedIcon from "@mui/icons-material/ArrowRightRounded";
 import AppTooltip from "../common/AppTooltip";
@@ -69,14 +69,15 @@ const MapSidebar = ({
   return (
       <div className='position-absolute top-0 left-0'>
           <Box ref={sidebarHeaderRef} className='sidebar_header'>
-              <MapSearchbar
+            <></>
+              {/* <MapSearchbar
                   handleSidebar={handleSidebar}
                   onSidebarBtnClick={openDashboardOnClick}
                   handleSearchUser={handleSearchUser}
                   handleFiltering={handleFiltering}
                   userLocation={userLocation}
                   handleActiveFiltering={handleActiveFiltering}
-              />
+              /> */}
           </Box>
           <div className={`map_sidebar_wrapper ${showSidebar ? "" : "hide"}`}>
               <div ref={sidebarContentBoxRef} className='sidebar_content_box'>
@@ -87,28 +88,22 @@ const MapSidebar = ({
                                 userLocationData.length > 0 &&
                                 userLocationData.map((item, i) => {
                                     return (
-                                        <MapFeedItem
-                                            key={i}
-                                            feedData={item}
-                                            onFeedSelect={handleListItemClick}
-                                            selectedFeed={selectedFeed}
-                                            handleDirection={() => handleDirection(item)}
-                                            profileId={profileId}
-                                        />
+                                      <></>
+                                        // <MapFeedItem
+                                        //     key={i}
+                                        //     feedData={item}
+                                        //     onFeedSelect={handleListItemClick}
+                                        //     selectedFeed={selectedFeed}
+                                        //     handleDirection={() => handleDirection(item)}
+                                        //     profileId={profileId}
+                                        // />
                                     );
                                 })
                               : filteredData &&
                                 filteredData.length > 0 &&
                                 filteredData.map((item, i) => {
                                     return (
-                                        <MapFeedItem
-                                            key={i}
-                                            feedData={item}
-                                            onFeedSelect={handleListItemClick}
-                                            selectedFeed={selectedFeed}
-                                            handleDirection={() => handleDirection(item)}
-                                            profileId={profileId}
-                                        />
+                                       <></>
                                     );
                                 })}
                       </List>

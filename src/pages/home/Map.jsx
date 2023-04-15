@@ -4,26 +4,26 @@ import { LoadScript, Marker, InfoWindow, Polyline } from "@react-google-maps/api
 import { useMutation, useQuery, useQueryClient } from "react-query";
 import useAxiosPrivate from "src/hooks/useAxiosPrivate";
 import { USER_API_URL } from "src/api/axios";
-import InfoWindowContent from "src/components/home/InfoWindowContent";
+// import InfoWindowContent from "src/components/home/InfoWindowContent";
 import useStore, { authStore } from "src/contexts/AuthProvider";
 import { UserRole } from "src/utils/enum";
 import Google from "src/components/map/Google";
-import LocationLogs from "src/components/home/LocationLogs";
-import TrackRequest from "src/components/home/TrackRequest";
+// import LocationLogs from "src/components/home/LocationLogs";
+// import TrackRequest from "src/components/home/TrackRequest";
 import moment from "moment";
 import { useSnackbar } from "notistack";
 import mapMarkerPerson from "../../assets/svgs/markers/map1.svg";
 import startingPoint from "../../assets/svgs/starting point.svg";
 import { useLocation, useNavigate } from "react-router";
 import files, { decodePolyline } from "src/helpers/helpers";
-import DrivingMode from "src/components/home/DrivingMode";
-import SearchWithin from "src/components/home/SearchWithin";
+// import DrivingMode from "src/components/home/DrivingMode";
+// import SearchWithin from "src/components/home/SearchWithin";
 import { MapContext } from "src/components/layouts/MainContent";
 import mapStore from "src/contexts/mapStore";
 import getDataURL from "src/components/map/imgToMarker";
 import { getDistance } from "geolib";
 import * as geolib from 'geolib';
-import LiveLocation from "src/components/home/LiveLocation";
+// import LiveLocation from "src/components/home/LiveLocation";
 
 
 const center = {
@@ -412,12 +412,13 @@ const Map = () => {
                 {/* {userKmData > 30 && !showPolyline && !showActivityLog && !showTrackBox && !showLiveLocation ? <SearchWithin onSearch={searchData} /> : <></>} */}
 
                 {!showPolyline && showActivityLog && activityList && !showLiveLocation && (
-                    <LocationLogs
-                        activityList={activityList}
-                        handleLocationLogBack={() => handleLocationLogBack()}
-                        handleLocationLog={handleLocationLog}
-                        handleMapFeedItemIcon={handleMapFeedItemIcon}
-                    />
+                    <></>
+                    // <LocationLogs
+                    //     activityList={activityList}
+                    //     handleLocationLogBack={() => handleLocationLogBack()}
+                    //     handleLocationLog={handleLocationLog}
+                    //     handleMapFeedItemIcon={handleMapFeedItemIcon}
+                    // />
                 )}
 
                 {state && showTrackBox && !showActivityLog && !showPolyline && !showLiveLocation && (
@@ -439,14 +440,15 @@ const Map = () => {
                 )}
 
                 {showPolyline && (
-                    <DrivingMode
-                        showMap={showMap}
-                        drivingModeDuration={drivingModeDuration}
-                        handleCloseDrivingMode={() => handleCloseDrivingMode()}
-                    />
+                    <></>
+                    // <DrivingMode
+                    //     showMap={showMap}
+                    //     drivingModeDuration={drivingModeDuration}
+                    //     handleCloseDrivingMode={() => handleCloseDrivingMode()}
+                    // />
                 )}
 
-                {showTrackBox && showLiveLocation && <LiveLocation userData={userLiveLocationData} handleCloseLiveLocation={() => handleCloseLiveLocation()} />}
+                {showTrackBox && showLiveLocation}
 
                 <div className='home_map_wrapper'>
                     <LoadScript googleMapsApiKey={googleMapKey} id='script-loader'>
@@ -538,7 +540,7 @@ const Map = () => {
                                             ? selectedActivityLog.location.coordinates[1]
                                             : selectedCenter.location?.coordinates[1],
                                     }}>
-                                    <InfoWindowContent
+                                    {/* <InfoWindowContent
                                         
                                         userFullName={selectedCenter?.fullName || selectedCenter?.name || selectedCenter?.title}
                                         eventId = {selectedCenter?.event_id}
@@ -567,7 +569,7 @@ const Map = () => {
                                         trustLevel={selectedCenter?.averageTrust}
                                         locationType={selectedCenter?.location?.type}
                                         phoneData={selectedCenter?.phone_data}
-                                    />
+                                    /> */}
                                 </InfoWindow>
                             )}
                         </Google>

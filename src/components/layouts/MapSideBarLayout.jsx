@@ -10,8 +10,8 @@ import MapSidebar from "../home/MapSidebar";
 import { getDistanceInKm } from "src/helpers/helpers";
 import { useSnackbar } from "notistack";
 import mapStore from "src/contexts/mapStore";
-import MapCategories from "../home/MapCategories.jsx";
-import MapSidebarEvent from "../home/MapSidebarEvent";
+// import MapCategories from "../home/MapCategories.jsx";
+// import MapSidebarEvent from "../home/MapSidebarEvent";
 
 export default function MapSideBarLayout({ filterLatLong, isNewSearch }) {
   const [lattitudeData, setLattitudeData] = useState(-26.204444);
@@ -281,7 +281,8 @@ export default function MapSideBarLayout({ filterLatLong, isNewSearch }) {
   return (
     <div className="map_sidebar_layout_wrapper">
       {showMapEvents ? (
-        <MapSidebarEvent userEventAllData={userEventAllData} closeFunc={handleEventSidebarClose} />
+        <></>
+        // <MapSidebarEvent userEventAllData={userEventAllData} closeFunc={handleEventSidebarClose} />
       ) : (
         <MapSidebar
           userLocationData={searchUserData}
@@ -293,7 +294,7 @@ export default function MapSideBarLayout({ filterLatLong, isNewSearch }) {
           handleResetFiltering={handleResetFiltering}
         />
       )}
-      <MapCategories {...mapCatData} userLocationData={searchUserData}  type ={selectedMapOption}/>
+      {/* <MapCategories {...mapCatData} userLocationData={searchUserData}  type ={selectedMapOption}/> */}
  
     </div>
   );

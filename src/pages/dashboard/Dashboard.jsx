@@ -1,28 +1,26 @@
 import { useEffect, useState } from "react";
-import UserCircleIcon from "src/svgComponents/DashboardCardIcons/UesrCircle";
 import SubAdminIcon from "src/svgComponents/DashboardCardIcons/SubAdmin"
-import TraceIcon from "src/svgComponents/DashboardCardIcons/Trace"
 
-import EventIcon from "src/svgComponents/DashboardCardIcons/Event"
+
 import LoadingScreen from 'src/components/LoadingScreen'
 import { useQuery } from 'react-query';
-import { TRACE_API_URL, USER_API_URL, BUSINESS_API_URL } from "src/api/axios";
+import { BUSINESS_API_URL,USER_API_URL } from "src/api/axios";
 import useAxiosPrivate from "src/hooks/useAxiosPrivate";
-import { Card, Table, TableBody, TableCell, TableContainer, TableRow, Box } from "@material-ui/core";
-import UserListHead from "src/components/user/UserListHead";
+import {  TableRow,} from "@material-ui/core";
+
 import { styled } from "@mui/styles";
-import moment from "moment";
-import { Button, Stack } from "@mui/material";
+
+
 import { useSnackbar } from "notistack";
 import { useNavigate } from "react-router";
 import { PATH_DASHBOARD } from 'src/routes/paths'
 import useStore from 'src/contexts/AuthProvider'
-import AppTooltip from "src/components/common/AppTooltip";
+
 import { NavLink } from 'react-router-dom'
-import { Modal, TextField, FormControl, InputLabel, Chip } from "@mui/material";
-import { Form, FormikProvider, useFormik } from "formik";
+
+import { useFormik } from "formik";
 import * as Yup from "yup";
-import CloseIcon from '@mui/icons-material/Close';
+
 import { useMutation } from "react-query";
 
 const Dashboard = () => {
@@ -190,66 +188,37 @@ const Dashboard = () => {
             <h4 className="app_text_20_semibold">dashboard</h4>
             <div className="container-fluid mt-4 px-0">
                <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-4  g-4">
-                  <div className="col">
-                     <NavLink className="text-decoration-none" to={permissionsData?.users?.substring(0, 1) == "1" ? PATH_DASHBOARD.general.users : "/"}>
+                  {/* <div className="col">
+                     <NavLink className="text-decoration-none" to={""}>
                         <div className="admin_dashboard_card">
                            <div className="card_icon"><UserCircleIcon /></div>
                            <div className="d-flex flex-column">
-                              <span className="app_text_36_bold app_text_black">{DashboardData?.User ?? 0 ?? 0}</span>
+                              <span className="app_text_36_bold app_text_black">0</span>
                               <span className="app_text_14_500 app_text_black">users</span>
                            </div>
                         </div>
                      </NavLink>
-                  </div>
-                  <div className="col">
-                     <NavLink className="text-decoration-none" to={permissionsData?.business_request?.substring(0, 1) == "1" ? PATH_DASHBOARD.general.business : "/"}>
-                        <div className="admin_dashboard_card">
-                           <div className="card_icon"><SubAdminIcon /></div>
-                           <div className="d-flex flex-column">
-                              <span className="app_text_36_bold app_text_black">{DashboardData?.Business ?? 0}</span>
-                              <span className="app_text_14_500 app_text_black">business</span>
-                           </div>
-                        </div>
-                     </NavLink>
-                  </div>
+                  </div> */}
                   
                 
 
 
+                
                   <div className="col">
-                     <NavLink className="text-decoration-none" to={PATH_DASHBOARD.general.event}>
-                        <div className="admin_dashboard_card">
-                           <div className="card_icon"><EventIcon /></div>
-                           <div className="d-flex flex-column">
-                              <span className="app_text_36_bold app_text_black">{DashboardData?.Event ?? 0}</span>
-                              <span className="app_text_14_500 app_text_black">events</span>
-                           </div>
-                        </div>
-                     </NavLink>
-                  </div>
-                  <div className="col">
-                     <NavLink className="text-decoration-none" to={permissionsData?.business_request?.substring(0, 1) == "1" ? PATH_DASHBOARD.general.business : "/"}>
+                     <NavLink className="text-decoration-none" to={"/"}>
                         <div className="admin_dashboard_card">
                            <div className="card_icon"><SubAdminIcon /></div>
                            <div className="d-flex flex-column">
-                              <span className="app_text_36_bold app_text_black">{DashboardData?.BusinessRequest ?? 0}</span>
-                              <span className="app_text_14_500 app_text_black">business requests</span>
+                              <span className="app_text_36_bold app_text_black">0</span>
+                              <span className="app_text_14_500 app_text_black">Users</span>
                            </div>
                         </div>
                      </NavLink>
                   </div>
+
+
                  
-                  <div className="col">
-                     <NavLink className="text-decoration-none" to={PATH_DASHBOARD.general.userDeleteReq}>
-                        <div className="admin_dashboard_card">
-                           <div className="card_icon"><UserCircleIcon /></div>
-                           <div className="d-flex flex-column">
-                              <span className="app_text_36_bold app_text_black">{DashboardData?.DeleteRequest ?? 0}</span>
-                              <span className="app_text_14_500 app_text_black">delete requests</span>
-                           </div>
-                        </div>
-                     </NavLink>
-                  </div>
+                 
                </div>
                {/* <div className="row mt-5">
 
