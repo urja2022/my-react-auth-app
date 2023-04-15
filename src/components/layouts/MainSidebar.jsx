@@ -30,179 +30,61 @@ const sidebarData = [
         linkIconElem: <Dashboard />,
         permission: "",
     },
-    // {
-    //     linkText: 'users',
-    //     link: PATH_DASHBOARD.general.users,
-    //     linkIconElem: <UserCircle />,
-    //     permission: "users",
-    // },
-    // {
-    //     linkText: 'chat group',
-    //     link: PATH_DASHBOARD.general.chatGroup,
-    //     linkIconElem: <SubAdmin />,
-    //     permission: "users",
-    // },
-    // {
-    //     linkText: 'category',
-    //     link: PATH_DASHBOARD.general.categorys,
-    //     linkIconElem: <Category />,
-    //     permission: "category",
-    // },
-    // {
-    //     linkText: 'chat category',
-    //     link: PATH_DASHBOARD.general.chatCategorys,
-    //     linkIconElem: <Category />,
-    //     permission: "chat_category",
-    // },
+    {
+        linkText: 'users',
+        link: PATH_DASHBOARD.general.users,
+        linkIconElem: <UserCircle />,
+        permission: "users",
+    },
+    {
+        linkText: 'chat group',
+        link: PATH_DASHBOARD.general.chatGroup,
+        linkIconElem: <SubAdmin />,
+        permission: "users",
+    },
     {
         linkText: 'roles/permissions',
         link: PATH_DASHBOARD.general.rolesPermissions,
         linkIconElem: <Roles />,
         permission: "roles",
     },
-    // {
-    //     linkText: 'sub admin',
-    //     link: PATH_DASHBOARD.general.admin,
-    //     linkIconElem: <SubAdmin />,
-    //     permission: "sub_admin",
-    // },
-    // {
-    //     linkText: 'trust level',
-    //     link: PATH_DASHBOARD.general.trustLevel,
-    //     linkIconElem: <Trust />,
-    //     permission: "trust_level",
-    // },
-    // {
-    //     linkText: 'business',
-    //     link: PATH_DASHBOARD.general.business,
-    //     linkIconElem: <Business />,
-    //     permission: "business_request",
-    // },
-    // {
-    //     linkText: 'events',
-    //     link: PATH_DASHBOARD.general.event,
-    //     linkIconElem: <Event />,
-    //     permission: "event",
-    // },
-    // {
-    //     linkText: 'delete user/business',
-    //     link: PATH_DASHBOARD.general.userDeleteReq,
-    //     linkIconElem: <UserCircle />,
-    //     permission: "users",
-    // },
-    // {
-    //     linkText: 'Restore user/business',
-    //     link: PATH_DASHBOARD.general.restoreDeletedReq,
-    //     linkIconElem: <UserCircle />,
-    //     permission: "users",
-    // },
-    // {
-    //     linkText: 'id verification',
-    //     linkIconElem: <UserCircle />,
-    //     // children: [
-    //     //     {
-    //     //         linkText: 'users id verification',
-    //     //         link: PATH_DASHBOARD.general.userIdVerification,
-    //     //         linkIconElem: <UserCircle />,
-    //     //         permission: "users"
-    //     //     },
-    //     //     {
-    //     //         linkText: 'invalid id attempts',
-    //     //         link: PATH_DASHBOARD.general.idVerifyLimit,
-    //     //         linkIconElem: <UserCircle />,
-    //     //         permission: "users"
-    //     //     },
-    //     //  {
-    //     //         linkText: 'update id verification',
-    //     //         link: PATH_DASHBOARD.general.updateIdVerification,
-    //     //         linkIconElem: <UserCircle />,
-    //     //         permission: "users",
-    //     //     }]
-    // },
-    // {
-    //     linkText: 'invalid id attempts',
-    //     link: PATH_DASHBOARD.general.idVerifyLimit,
-    //     linkIconElem: <UserCircle />,
-    //     permission: "users"
-    // },
-    // {
-    //     linkText: 'update id verification',
-    //     link: PATH_DASHBOARD.general.updateIdVerification,
-    //     linkIconElem: <UserCircle />,
-    //     permission: "users",
-    // },
-    // {
-    //     linkText: 'user request',
-    //     link: PATH_DASHBOARD.general.userDocument,
-    //     linkIconElem: <UserCircle />,
-    //     permission: "users",
-    // },
-    // {
-    //     linkText: 'trace request',
-    //     link: PATH_DASHBOARD.general.traceRequest,
-    //     linkIconElem: <Trace />,
-    //     permission: "trace_request",
-    // },
-    // {
-    //     linkText: 'trace history',
-    //     link: PATH_DASHBOARD.general.traceHistory,
-    //     linkIconElem: <Trace />,
-    //     permission: "trace_history",
-    // },
-    // {
-    //     linkText: 'employee request',
-    //     link: PATH_DASHBOARD.general.employeeRequest,
-    //     linkIconElem: <Trace />,
-    //     permission: "employee_request",
-    // },
-    // {
-    //     linkText: 'employee history',
-    //     link: PATH_DASHBOARD.general.employeeRequestHistory,
-    //     linkIconElem: <Trace />,
-    //     permission: "employee_history",
-    // },
-    // {
-    //     linkText: 'feed',
-    //     link: PATH_DASHBOARD.general.postList,
-    //     linkIconElem: <PostIcon />,
-    //     permission: "posts",
-    // },
-    // {
-    //     linkText: 'report subjects',
-    //     link: PATH_DASHBOARD.general.reportSubject,
-    //     linkIconElem: <Roles />,
-    //     permission: "",
-    // },
-    // {
-    //     linkText: 'reports',
-    //     link: PATH_DASHBOARD.general.report,
-    //     linkIconElem: <Roles />,
-    //     permission: "",
-    // },
-    // {
-    //     linkText: 'configuration field',
-    //     link: PATH_DASHBOARD.general.configurableFields,
-    //     linkIconElem: <Configurable />,
-    //     permission: "configurable_fields",
-    // },
-    // {
-    //     linkText: 'bulk notification',
-    //     link: PATH_DASHBOARD.general.bulkNotification,
-    //     linkIconElem: <NotificationsIcon />,
-    //     // permission: "configurable_fields",
-    // },
+    {
+        linkText: 'sub admin',
+        link: PATH_DASHBOARD.general.admin,
+        linkIconElem: <SubAdmin />,
+        permission: "sub_admin",
+    },
+    {
+        linkText: 'business',
+        link: PATH_DASHBOARD.general.business,
+        linkIconElem: <Business />,
+        permission: "business_request",
+    },
+    {
+        linkText: 'events',
+        link: PATH_DASHBOARD.general.event,
+        linkIconElem: <Event />,
+        permission: "event",
+    },
+    {
+        linkText: 'delete user/business',
+        link: PATH_DASHBOARD.general.userDeleteReq,
+        linkIconElem: <UserCircle />,
+        permission: "users",
+    },
+    
     {
         linkText: 'settings',
         link: PATH_DASHBOARD.general.settings,
         linkIconElem: <Setting />,
         permission: "",
     },
-    // {
-    //     linkText: 'contact us',
-    //     link: PATH_DASHBOARD.general.contactUs,
-    //     linkIconElem: <ContactPageIcon />,
-    //     permission: "",
-    // }
+    {
+        linkText: 'contact us',
+        link: PATH_DASHBOARD.general.contactUs,
+        linkIconElem: <ContactPageIcon />,
+        permission: "",
+    }
 ]
 
 const MainSidebar = () => {

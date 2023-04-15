@@ -31,7 +31,7 @@ const AUTH_API_URL = {
 
 const INDIVIDUAL_API_URL = {
   profile: path(ROOTS_PATH, "/profile"),
-  profileUpload: path(ROOTS_PATH, "/image/upload"),
+  profileUpload: path(ROOTS_PATH, "/upload"),
   documentUpload: path(ROOTS_PATH, "/file/upload"),
   idVerify: path(ROOTS_PATH, "/profile/document"),
   permission: path(ROOTS_PATH, "/profile/setting"),
@@ -93,7 +93,7 @@ const USER_API_URL = {
   categoryUpdate: path(ROOTS_PATH, "/category/"),
   friendList: path(USER_PATH, "/friends/action"),
   friendRequest: path(USER_PATH, "/friends/"),
-  referencesRequest: path(USER_PATH, "/references"),
+
   getLocation: path(USER_LOCATION, "/location/list"),
   getLocationAdmin: path(USER_LOCATION, "/location/list/admin"),
   linkedRequest: path(ROOTS_PATH, "/link/"),
@@ -106,21 +106,20 @@ const USER_API_URL = {
   getUserTraceHistory: path(USER_PATH, "/trace/history/"),
   getUserTrace: path(ROOTS_PATH, "/trace/list/"),
   deleteUserTrace: path(ROOTS_PATH, "/trace/delete/"),
-  getReportList: path(ROOTS_PATH, "/report"),
-  deleteReport: path(ROOTS_PATH, "/report/"),
-  getReportSubjectList: path(ROOTS_PATH, "/report/subject"),
-  addReportSubject: path(ROOTS_PATH, "/report/subject"),
-  updateReportSubject: path(ROOTS_PATH, "/report/subject/"),
-  deleteReportSubject: path(ROOTS_PATH, "/report/subject/"),
-  reportreply: path(ROOTS_PATH, "/report/reply"),
+
+
+
+
+
+
   getUserDeleteReqList: path(ROOTS_PATH, "/delete/request"),
   deleteUser: path(ROOTS_PATH, "/user/"),
   deleteBusiness: path(ROOTS_PATH, "/business/"),
   removeArchiveUser: path(ROOTS_PATH, "/restore"),
   getDeletedReqList: path(ROOTS_PATH, "/deleted-req"),
-  archiveUserView: path(ROOTS_PATH, "/delete-request/view/"),
+
   deleteBusinessView: path(ROOTS_PATH, "/delete-request/business/view/"),
-  getRestoreBusiness: path(ROOTS_PATH, "/restoreBusinessView"),
+
   getRestoreUser: path(ROOTS_PATH, "/restoreUserView"),
   cancelRequest: path(ROOTS_PATH, "/request/cancel/"),
   getDirection: path(USER_LOCATION, "/google/direction"),

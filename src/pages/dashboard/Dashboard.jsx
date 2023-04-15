@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import UserCircleIcon from "src/svgComponents/DashboardCardIcons/UesrCircle";
 import SubAdminIcon from "src/svgComponents/DashboardCardIcons/SubAdmin"
 import TraceIcon from "src/svgComponents/DashboardCardIcons/Trace"
-import CategoryIcon from "src/svgComponents/DashboardCardIcons/Category"
-import ReportIcon from "src/svgComponents/DashboardCardIcons/Roles"
+
 import EventIcon from "src/svgComponents/DashboardCardIcons/Event"
 import LoadingScreen from 'src/components/LoadingScreen'
 import { useQuery } from 'react-query';
@@ -213,28 +212,10 @@ const Dashboard = () => {
                         </div>
                      </NavLink>
                   </div>
-                  <div className="col">
-                     <NavLink className="text-decoration-none" to={permissionsData?.category?.substring(0, 1) == "1" ? PATH_DASHBOARD.general.categorys : "/"}>
-                        <div className="admin_dashboard_card">
-                           <div className="card_icon"><CategoryIcon /></div>
-                           <div className="d-flex flex-column">
-                              <span className="app_text_36_bold app_text_black">{DashboardData?.Category ?? 0}</span>
-                              <span className="app_text_14_500 app_text_black">categories</span>
-                           </div>
-                        </div>
-                     </NavLink>
-                  </div>
-                  <div className="col">
-                     <NavLink className="text-decoration-none" to={permissionsData?.trace_request?.substring(0, 1) == "1" ? PATH_DASHBOARD.general.traceRequest : "/"}>
-                        <div className="admin_dashboard_card">
-                           <div className="card_icon"><TraceIcon /></div>
-                           <div className="d-flex flex-column">
-                              <span className="app_text_36_bold app_text_black">{DashboardData?.TraceRequest ?? 0}</span>
-                              <span className="app_text_14_500 app_text_black">trace requests</span>
-                           </div>
-                        </div>
-                     </NavLink>
-                  </div>
+                  
+                
+
+
                   <div className="col">
                      <NavLink className="text-decoration-none" to={PATH_DASHBOARD.general.event}>
                         <div className="admin_dashboard_card">
@@ -257,17 +238,7 @@ const Dashboard = () => {
                         </div>
                      </NavLink>
                   </div>
-                  <div className="col">
-                     <NavLink className="text-decoration-none" to={PATH_DASHBOARD.general.report}>
-                        <div className="admin_dashboard_card">
-                           <div className="card_icon"><ReportIcon /></div>
-                           <div className="d-flex flex-column">
-                              <span className="app_text_36_bold app_text_black">{DashboardData?.ReportIssue ?? 0}</span>
-                              <span className="app_text_14_500 app_text_black">reports</span>
-                           </div>
-                        </div>
-                     </NavLink>
-                  </div>
+                 
                   <div className="col">
                      <NavLink className="text-decoration-none" to={PATH_DASHBOARD.general.userDeleteReq}>
                         <div className="admin_dashboard_card">
